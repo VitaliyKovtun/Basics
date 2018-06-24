@@ -1,0 +1,38 @@
+AllCops:
+  Exclude:
+    - bin/**
+    - config/database.yml
+    - config/initializers/devise.rb
+    - db/migrate/**
+    - db/schema.rb
+    - log/**
+    - tmp/**
+  Rails:
+    Enabled: true
+
+Documentation:
+  Enabled: false
+
+Metric/BlockLength:
+  Max: 80
+
+Metrics/ClassLength:
+  Max: 80
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/ModuleLength:
+  Max: 80
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/AsciiIdentifiers:
+  Enabled: false
