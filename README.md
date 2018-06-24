@@ -1,24 +1,45 @@
-# README
+#  Basic
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Requirements:
 
-Things you may want to cover:
+* Ruby 2.5.1: https://www.ruby-lang.org/en/documentation/
 
-* Ruby version
+* Ruby on Rails 5.2.0: http://guides.rubyonrails.org/
 
-* System dependencies
+* PostgreSQL 9.5: https://www.postgresql.org/docs/
 
-* Configuration
+## :arrow_up: How to Setup Application
 
-* Database creation
+**Step 1:** Clone this repo with:
+```
+HTTPS:
+https://github.com/VitaliyKovtun/basics.git
+```
+```
+SSH:
+git@github.com:VitaliyKovtun/basics.git
+```
 
-* Database initialization
+**Step 2:** Type `cd basic` in terminal to enter cloned folder in the current directory.
 
-* How to run the test suite
+**Step 3:** Run `bundle` to install dependencies.
 
-* Services (job queues, cache servers, search engines, etc.)
+## :arrow_up: How to Setup Database
 
-* Deployment instructions
+**Step 1:** Find database.yml file in config directory:
 
-* ...
+**Step 2:** Open file and set database configuration:
+```
+username: <%= ENV['DATABASE_USERNAME'] %>
+password: <%= ENV['DATABASE_PASSWORD'] %>
+```
+
+**Step 3:** Run to create required postgres databases:
+```
+rails db:create
+rails db:migrate
+```
+
+## :arrow_right: How to Run Server
+
+**Step 1:** Run rails server with `rails s`.
